@@ -75,5 +75,15 @@ function atualiza(string $entidade, array $dados, array $criterio = []) : bool
         eval($comando);
     }
 
-    
+    mysqli_stmt_execute($stmt);
+
+    $retorno = (boolean) mysqli_stmt_affected_rows($stmt);
+
+    $_SESSION['errors'] = mysqli_stmt_error_list($stmt);
+
+    mysqli_stmt_close($stmt);
+
+    desconecta($conexao);
+
+    return $retorno;
 }
