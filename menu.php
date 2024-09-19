@@ -4,7 +4,7 @@
 
         <?php
             include('inicia_sessao.php');
-            if(empty($_SESSION['login']));
+            if(empty($_SESSION['login'])):
         ?>
         <li><a href="CadU.php">Cadastrar Usuário</a></li>
         <li><a href="LisU.php">Listar Usuário</a></li>
