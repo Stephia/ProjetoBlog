@@ -10,7 +10,7 @@ CREATE TABLE Usuario(
     data_criacao    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     ativo           TINYINT(4) NOT NULL DEFAULT '0',
     adm             TINYINT(4) NOT NULL DEFAULT '0',
-    PRIMARY KEY (id) );
+    PRIMARY KEY (id_u) );
 
 CREATE TABLE Post(
 	id_p 	        INT AUTO_INCREMENT NOT NULL,
@@ -19,7 +19,7 @@ CREATE TABLE Post(
     id_us           INT(11) NOT NULL,
     data_criacao    DATETIME NOT NULL CURRENT_TIMESTAMP,
     data_postagem   DATETIME NOT NULL,
-    PRIMARY KEY (id) ),
+    PRIMARY KEY (id_p) ),
     KEY fk_Post_Usuario_idx (id_us),
     CONSTRAINT fk_Post_Usuario FOREIGN KEY (id_us) REFERENCES Usuario (id_u)
 
