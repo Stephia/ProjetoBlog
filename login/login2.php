@@ -9,7 +9,7 @@
     if(mysqli_num_rows($result) > 0){
         $row = mysqli_fetch_array($result);
         if($row['senha'] == $senha){
-            include('inicia_sessao.php');
+            include('../includes/inicia_sessao.php');
             $_SESSION['login'] = $row;
             header('Location: index.php');
         }else{
@@ -18,3 +18,4 @@
     }else{
         echo "<h1>Usuário não encontrado</h1>";
     }
+?>
