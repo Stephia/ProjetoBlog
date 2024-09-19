@@ -24,8 +24,8 @@ CREATE TABLE Post(
     CONSTRAINT fk_Post_Usuario FOREIGN KEY (id_us) REFERENCES Usuario (id_u)
 
 INSERT INTO Usuario VALUES
-	(1, 'Aurora', 'aurorinha@gmail.com', '409094l0v3', false),
-    (2, 'Breno', 'breninhodograu@gmail.com', '1234567890', true),
-    (3, 'Carolaine', 'carolainess@hotmail.com', 'eu231a23nh4', true),
-    (4, 'Dalberto', 'adalberto@yahoo.com.br', '4d4lb37t0', true),
-    (5, 'Evellyn', 'xevellynx@hotmail.com', '^0n;[Q=69w', false);
+	(1, 'Aurora', 'aurorinha@gmail.com', '409094l0v3'),
+    (2, 'Breno', 'breninhodograu@gmail.com', '1234567890'),
+    (3, 'Carolaine', 'carolainess@hotmail.com', 'eu231a23nh4'),
+    (4, 'Dalberto', 'adalberto@yahoo.com.br', '4d4lb37t0'),
+    (5, 'Evellyn', 'xevellynx@hotmail.com', '^0n;[Q=69w');
