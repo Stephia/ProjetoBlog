@@ -17,7 +17,7 @@ CREATE TABLE Post(
     titulo          VARCHAR(255) NOT NULL,
     texto           TEXT NOT NULL,
     id_us           INT(11) NOT NULL,
-    data_criacao    DATETIME NOT NULL CURRENT_TIMESTAMP,
+    data_criacao    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     data_postagem   DATETIME NOT NULL,
     PRIMARY KEY (id_p) ),
     KEY fk_Post_Usuario_idx (id_us),
