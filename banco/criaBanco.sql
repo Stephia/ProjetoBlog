@@ -19,9 +19,10 @@ CREATE TABLE Post(
     id_us           INT(11) NOT NULL,
     data_criacao    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     data_postagem   DATETIME NOT NULL,
-    PRIMARY KEY (id_p) ),
+    PRIMARY KEY (id_p),
     KEY fk_Post_Usuario_idx (id_us),
     CONSTRAINT fk_Post_Usuario FOREIGN KEY (id_us) REFERENCES Usuario (id_u)
+);
 
 INSERT INTO Usuario VALUES
 	(1, 'Aurora', 'aurorinha@gmail.com', '409094l0v3', 20150415, 1, 0),

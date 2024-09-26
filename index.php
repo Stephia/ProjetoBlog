@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <title>Inicio</title>
     <?php
-        include('includes/inicia_sessao.php');
+        /*include('includes/inicia_sessao.php');
         if(empty($_SESSION['login'])){
             header("Location: login.php");
         }
-        include('menu.php');
+        include('menu.php');*/
     ?>
 </head>
 <body>
