@@ -19,7 +19,7 @@ function insert_teste($nome, $email, $senha) : void
 function buscar_teste() : void
 {
     $usuarios = buscar('usuario',[ 'id','nome','email'],[],'');
-    insere('usuario', $dados);
+    print_r($usuarios);
 }
 // Teste update banco de dados
 function update_teste($id, $nome, $email) : void
