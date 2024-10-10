@@ -13,6 +13,12 @@
         'post',
         [
             'titulo',
+            'data_postagem',
+            'texto',
+            '(select nome from usuario where usuario.id = post.usuario_id) as nome'
+        ],
+        [
+            
         ]
     )
 <html lang="pt-BR">
