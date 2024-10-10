@@ -58,7 +58,7 @@
                 $criterio
             );
 
-            if(count($retorno) > 0) {
+            if(count($retorno) > 0){
                 if(crypt($senha, $salt) == $retorno[0] ['senha']) {
                     $_SESSION['login']['usuario'] = $retorno[0];
                     if(!empty($_SESSION['url_retorno'])) {

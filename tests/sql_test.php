@@ -8,7 +8,7 @@
     $dados = ['nome' => $nome, 'email' => $email, 'senha' => $senha];
 
     $entidade = 'usuario';
-    $criterio = [['id', '=', $id]];
+    $criterio = [['id', '=', $id_u]];
     $campos = ['id', 'nome', 'email'];
     print_r($dados);
     echo '<br>';

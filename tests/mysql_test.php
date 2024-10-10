@@ -7,13 +7,13 @@ require_once '../core/mysql.php';
 
 insert_teste('João', 'joao@ifsp.edu.br', '123456');
 buscar_teste();
-update_teste(38, 'Murilo', 'silva@gmail.com');
+update_teste(38, 'murilo', 'silva@gmail.com');
 buscar_teste();
 // Teste inserção bando de dados
 function insert_teste($nome, $email, $senha) : void
 {
     $dados = ['nome' => $nome, 'email' => $email, 'senha' => $senha];
-    insere('usuario', $dados);
+    insere('usuario',$dados);
 }
 // Teste select banco de dados
 function buscar_teste() : void
@@ -22,10 +22,10 @@ function buscar_teste() : void
     print_r($usuarios);
 }
 // Teste update banco de dados
-function update_teste($id, $nome, $email) : void
+function update_teste($id_u, $nome, $email) : void
 {
     $dados = ['nome' => $nome, 'email' => $email];
-    $criterio = [['id', '=', $id]];
+    $criterio = [['id', '=', $id_u]];
     atualiza('usuario',$dados,$criterio);
 }
 ?>

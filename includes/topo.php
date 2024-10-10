@@ -4,7 +4,7 @@
 
 <div class="card">
     <div class="card-header">
-        <hl> Projeto Blog em PHP + MySQL IFSP - MURILO</hl>
+        <hl> Projeto Blog em PHP + MySQL IFSP - Stephanie</hl>
     </div>
     <?php if(isset($_SESSION['login'])): ?>
     <div class="card-body text-right">
