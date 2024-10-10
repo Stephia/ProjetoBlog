@@ -25,8 +25,9 @@ CREATE TABLE Post(
 );
 
 INSERT INTO Usuario VALUES
-	(1, 'Aurora', 'aurorinha@gmail.com', '409094l0v3', 20150415, 1, 0),
-    (2, 'Breno', 'breninhodograu@gmail.com', '1234567890', 20240912, 4, 0),
-    (3, 'Carolaine', 'carolainess@hotmail.com', 'eu231a23nh4', 20240101, 2, 0),
-    (4, 'Dalberto', 'adalberto@yahoo.com.br', '4d4lb37t0', 20220503, 3, 0),
-    (5, 'Evellyn', 'xevellynx@hotmail.com', '^0n;[Q=69w', 20240913, 0, 0);
+    (1, 'Stephanie', 'anonimogender@gmail.com', '1234575', 20061122, 1, 1),
+	(2, 'Aurora', 'aurorinha@gmail.com', '409094l0v3', 20150415, 1, 0),
+    (3, 'Breno', 'breninhodograu@gmail.com', '1234567890', 20240912, 4, 0),
+    (4, 'Carolaine', 'carolainess@hotmail.com', 'eu231a23nh4', 20240101, 2, 0),
+    (5, 'Dalberto', 'adalberto@yahoo.com.br', '4d4lb37t0', 20220503, 3, 0),
+    (6, 'Evellyn', 'xevellynx@hotmail.com', '^0n;[Q=69w', 20240913, 0, 0);
