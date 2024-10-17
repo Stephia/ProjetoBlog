@@ -1,13 +1,13 @@
 <?php
 
-function conecta() : mysqli
+function conecta() :mysqli
 {
-    $servidor   = 'localhost';
-    $banco      = 'BLOG';
-    $port       = 3307;
-    $usuario    = 'root';
-    $senha      = '';
-    $conexao = mysqli_connect($servidor, $usuario, $senha, $banco, $port);
+    $servidor = 'localhost';
+    $banco    = 'BLOG';
+    $port     = 3307;
+    $usuario  = 'root';
+    $senha    = '';
+    $conexao  = mysqli_connect($servidor, $usuario, $senha, $banco, $port);
 
     if(!$conexao){
         echo 'Erro: Não foi possível conectar ao MySql.' . PHP_EOL;
@@ -16,10 +16,9 @@ function conecta() : mysqli
         return null;
     }
     return $conexao;
-}
 
-function desconecta($conexao)
-{
+}
+function desconecta($conexao){
     mysqli_close($conexao);
 }
 ?>
